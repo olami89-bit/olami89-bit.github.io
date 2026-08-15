@@ -1,1 +1,634 @@
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,sans-serif;background:#f3f8f4;color:#26362d;line-height:1.65}a{color:inherit}.container{width:92%;max-width:1150px;margin:auto}header{background:linear-gradient(135deg,#075d35,#0c7b48);color:#fff;box-shadow:0 3px 15px #0002}.brand{display:flex;align-items:center;justify-content:center;gap:18px;padding:18px 10px}.logo{width:90px;height:90px;border-radius:50%;object-fit:cover;border:4px solid #d9a52b;background:#fff}.brand h1{margin:0;font-size:28px;line-height:1.1}.brand p{margin:6px 0;font-size:13px}nav{display:flex;justify-content:center;flex-wrap:wrap;gap:5px;padding:8px}nav a{color:#fff;text-decoration:none;font-weight:bold;padding:10px 13px;border-radius:8px}nav a:hover{background:#d9a52b;color:#173b29}.hero{margin:25px auto;border-radius:20px;min-height:430px;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(135deg,#326e56,#507c68);color:#fff;padding:55px 20px}.hero h2{font-size:45px;line-height:1.15}.hero p{font-size:19px}.button{display:inline-block;background:#d9a52b;color:#10291d;text-decoration:none;font-weight:bold;padding:12px 20px;border-radius:9px;border:0}.button:hover{filter:brightness(1.06)}section{margin:25px auto;padding:34px;background:#fff;border-radius:18px;box-shadow:0 4px 18px #153a2612}.title{text-align:center;color:#075d35;font-size:33px;margin-top:0}.subtitle{text-align:center;color:#66766e;margin-top:-12px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:25px}.card{border:1px solid #d9e6dc;border-radius:15px;overflow:hidden;background:#fbfdfb}.card img{width:100%;height:215px;object-fit:cover;display:block}.card-body{padding:20px}.card h3{color:#075d35}.price{font-size:21px;font-weight:bold;color:#075d35}.about-grid{display:grid;grid-template-columns:300px 1fr;gap:35px;align-items:center}.profile{width:100%;max-height:390px;object-fit:cover;border-radius:16px;border:5px solid #e3eee6}.info{background:#edf7ef;border-left:5px solid #075d35;padding:18px;border-radius:9px;margin-top:15px}.info h3{color:#075d35}.blog-image{width:100%;height:300px;object-fit:cover;display:block}.blog-body{padding:25px}.category{display:inline-block;background:#075d35;color:#fff;padding:4px 10px;border-radius:18px;font-size:12px;font-weight:bold}.note{background:#fff8e7;border-left:5px solid #d9a52b;padding:15px;border-radius:8px}.ad{min-height:90px;border:1px dashed #b8c9bd;background:#f7faf8;border-radius:10px;display:flex;align-items:center;justify-content:center;text-align:center;color:#78877e;margin:25px auto}footer{background:#073d25;color:#fff;padding:32px 0;margin-top:35px}.footer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}footer h3{color:#d9a52b}footer a{display:block;margin:7px 0;text-decoration:none;color:#e9f5ed}.copyright{text-align:center;border-top:1px solid #ffffff26;padding-top:18px;margin-top:22px;font-size:13px}.whatsapp{position:fixed;right:16px;bottom:16px;z-index:999;background:#20b85a;color:#fff;text-decoration:none;padding:12px 17px;border-radius:30px;font-weight:bold}@media(max-width:800px){.brand h1{font-size:22px}.logo{width:78px;height:78px}.hero h2{font-size:35px}.grid3{grid-template-columns:1fr 1fr}.about-grid,.grid2{grid-template-columns:1fr}.blog-image{height:220px}.footer-grid{grid-template-columns:1fr}}@media(max-width:520px){.grid3{grid-template-columns:1fr}.brand h1{font-size:19px}.hero h2{font-size:31px}section{padding:24px 18px}.title{font-size:28px}}
+/* =========================================
+   OLAM HERBAL MEDICAL STORE
+   Premium Responsive Stylesheet
+========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f8f5;
+  color: #26362d;
+  line-height: 1.65;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  width: 92%;
+  max-width: 1150px;
+  margin: auto;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+  background: linear-gradient(135deg, #075d35, #087b48);
+  color: #fff;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  padding: 18px 10px 12px;
+}
+
+.logo {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  object-fit: contain;
+  border: 4px solid #d9a52b;
+  background: #fff;
+  padding: 4px;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 27px;
+  line-height: 1.08;
+  letter-spacing: 0.3px;
+}
+
+.brand p {
+  margin: 7px 0 0;
+  font-size: 13px;
+  opacity: 0.95;
+}
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 8px 10px 14px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 9px 13px;
+  border-radius: 8px;
+  transition: 0.25s ease;
+}
+
+nav a:hover {
+  background: #d9a52b;
+  color: #173b29;
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+  margin: 28px auto;
+  min-height: 430px;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(27, 91, 68, 0.95),
+      rgba(67, 119, 96, 0.94)
+    );
+  color: #fff;
+  padding: 55px 25px;
+  box-shadow: 0 10px 30px rgba(20, 70, 45, 0.15);
+}
+
+.hero > div {
+  max-width: 780px;
+}
+
+.hero h2 {
+  margin: 0 0 20px;
+  font-size: 46px;
+  line-height: 1.12;
+  letter-spacing: -0.5px;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 0 auto 28px;
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+.button {
+  display: inline-block;
+  background: #d9a52b;
+  color: #10291d;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 13px 22px;
+  border-radius: 10px;
+  border: 0;
+  transition: 0.25s ease;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.12);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.06);
+}
+
+/* =========================================
+   GENERAL SECTIONS
+========================================= */
+
+section {
+  margin: 28px auto;
+  padding: 36px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 5px 22px rgba(21, 58, 38, 0.08);
+}
+
+.title {
+  text-align: center;
+  color: #075d35;
+  font-size: 33px;
+  margin: 0 0 8px;
+  line-height: 1.2;
+}
+
+.subtitle {
+  text-align: center;
+  color: #66766e;
+  margin: 0 0 28px;
+}
+
+/* =========================================
+   GRIDS
+========================================= */
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+/* =========================================
+   CARDS
+========================================= */
+
+.card {
+  border: 1px solid #d9e6dc;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fbfdfb;
+  box-shadow: 0 4px 14px rgba(20, 60, 38, 0.06);
+  transition: 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(20, 60, 38, 0.12);
+}
+
+.card img {
+  width: 100%;
+  height: 215px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  padding: 21px;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #075d35;
+  font-size: 21px;
+}
+
+.card p {
+  color: #56655d;
+}
+
+.price {
+  font-size: 21px;
+  font-weight: bold;
+  color: #075d35;
+  margin: 14px 0;
+}
+
+/* =========================================
+   ABOUT
+========================================= */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 35px;
+  align-items: center;
+}
+
+.profile {
+  width: 100%;
+  max-height: 390px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 5px solid #e3eee6;
+}
+
+/* =========================================
+   INFORMATION BOX
+========================================= */
+
+.info {
+  background: #edf7ef;
+  border-left: 5px solid #075d35;
+  padding: 18px;
+  border-radius: 9px;
+  margin-top: 15px;
+}
+
+.info h3 {
+  color: #075d35;
+  margin-top: 0;
+}
+
+/* =========================================
+   BLOG
+========================================= */
+
+.blog-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.blog-body {
+  padding: 25px;
+}
+
+.category {
+  display: inline-block;
+  background: #075d35;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 18px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* =========================================
+   NOTES
+========================================= */
+
+.note {
+  background: #fff8e7;
+  border-left: 5px solid #d9a52b;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* =========================================
+   ADVERTISEMENT
+========================================= */
+
+.ad {
+  min-height: 90px;
+  border: 1px dashed #b8c9bd;
+  background: #f7faf8;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #78877e;
+  margin: 25px auto;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+  background: #073d25;
+  color: #fff;
+  padding: 38px 0 25px;
+  margin-top: 40px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+footer h3 {
+  color: #d9a52b;
+  margin-top: 0;
+}
+
+footer a {
+  display: block;
+  margin: 7px 0;
+  text-decoration: none;
+  color: #e9f5ed;
+}
+
+footer a:hover {
+  color: #d9a52b;
+}
+
+.copyright {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 18px;
+  margin-top: 25px;
+  font-size: 13px;
+  color: #cfe0d5;
+}
+
+/* =========================================
+   WHATSAPP BUTTON
+========================================= */
+
+.whatsapp {
+  position: fixed;
+  right: 16px;
+  bottom: 18px;
+  z-index: 999;
+  background: #20b85a;
+  color: #fff;
+  text-decoration: none;
+  padding: 13px 18px;
+  border-radius: 30px;
+  font-weight: bold;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.22);
+  transition: 0.25s ease;
+}
+
+.whatsapp:hover {
+  transform: translateY(-3px);
+  background: #159447;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 800px) {
+
+  .brand {
+    padding: 15px 8px 10px;
+  }
+
+  .brand h1 {
+    font-size: 22px;
+  }
+
+  .brand p {
+    font-size: 12px;
+  }
+
+  .logo {
+    width: 72px;
+    height: 72px;
+  }
+
+  nav {
+    padding-bottom: 12px;
+  }
+
+  nav a {
+    padding: 8px 11px;
+    font-size: 14px;
+  }
+
+  .hero {
+    min-height: 390px;
+    padding: 45px 22px;
+  }
+
+  .hero h2 {
+    font-size: 38px;
+  }
+
+  .hero p {
+    font-size: 17px;
+  }
+
+  .grid3 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-grid,
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-image {
+    height: 230px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 520px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  .container {
+    width: 94%;
+  }
+
+  .brand {
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 13px 5px 8px;
+  }
+
+  .logo {
+    width: 64px;
+    height: 64px;
+    border-width: 3px;
+    padding: 3px;
+  }
+
+  .brand h1 {
+    font-size: 19px;
+    line-height: 1.05;
+  }
+
+  .brand p {
+    font-size: 11px;
+    line-height: 1.4;
+    margin-top: 5px;
+  }
+
+  nav {
+    gap: 3px;
+    padding: 6px 5px 12px;
+  }
+
+  nav a {
+    font-size: 13px;
+    padding: 7px 9px;
+    border-radius: 7px;
+  }
+
+  .hero {
+    min-height: 390px;
+    margin: 20px auto;
+    border-radius: 18px;
+    padding: 40px 18px;
+  }
+
+  .hero h2 {
+    font-size: 32px;
+    line-height: 1.12;
+    margin-bottom: 17px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    line-height: 1.65;
+    margin-bottom: 24px;
+  }
+
+  .button {
+    padding: 11px 17px;
+    font-size: 14px;
+  }
+
+  section {
+    margin: 20px auto;
+    padding: 25px 18px;
+    border-radius: 15px;
+  }
+
+  .title {
+    font-size: 27px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .grid3 {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .card img {
+    height: 210px;
+  }
+
+  .card-body {
+    padding: 18px;
+  }
+
+  .card h3 {
+    font-size: 19px;
+  }
+
+  .blog-image {
+    height: 210px;
+  }
+
+  .about-grid {
+    gap: 20px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    padding: 30px 0 22px;
+  }
+
+  .whatsapp {
+    right: 12px;
+    bottom: 14px;
+    padding: 11px 15px;
+    font-size: 14px;
+  }
+
+  .ad {
+    min-height: 75px;
+    font-size: 13px;
+  }
+}
+
+/* =========================================
+   VERY SMALL PHONES
+========================================= */
+
+@media (max-width: 380px) {
+
+  .brand h1 {
+    font-size: 17px;
+  }
+
+  .brand p {
+    font-size: 10px;
+  }
+
+  .logo {
+    width: 58px;
+    height: 58px;
+  }
+
+  nav a {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+}
