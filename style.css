@@ -632,3 +632,131 @@ footer a:hover {
     font-size: 15px;
   }
 }
+
+/* ===== PREMIUM HERO UPGRADE ===== */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 500px;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255,255,255,.10), transparent 25%),
+    radial-gradient(circle at 85% 80%, rgba(217,165,43,.15), transparent 30%),
+    linear-gradient(135deg, #245f49, #3f8068);
+  box-shadow: 0 12px 35px rgba(20, 70, 45, .15);
+}
+
+.hero::before {
+  content: "🌿";
+  position: absolute;
+  font-size: 180px;
+  opacity: .06;
+  right: -25px;
+  top: -30px;
+}
+
+.hero::after {
+  content: "🍃";
+  position: absolute;
+  font-size: 150px;
+  opacity: .06;
+  left: -25px;
+  bottom: -25px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+  margin: auto;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.25);
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: .5px;
+  margin-bottom: 18px;
+}
+
+.hero h2 {
+  margin: 0 auto 20px;
+  max-width: 800px;
+  font-size: 48px;
+  line-height: 1.12;
+}
+
+.hero p {
+  max-width: 720px;
+  margin: 0 auto 28px;
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hero .button {
+  min-width: 210px;
+  text-align: center;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.hero .button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.18);
+}
+
+.secondary-button {
+  background: #fff;
+  color: #075d35;
+}
+
+.hero-trust {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 28px;
+  font-size: 14px;
+  opacity: .95;
+}
+
+@media(max-width:520px) {
+
+  .hero {
+    min-height: 520px;
+    padding: 45px 18px;
+  }
+
+  .hero h2 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 17px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero .button {
+    width: 100%;
+  }
+
+  .hero-trust {
+    flex-direction: column;
+    gap: 7px;
+    margin-top: 22px;
+  }
+}
