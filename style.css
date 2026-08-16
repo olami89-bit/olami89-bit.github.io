@@ -760,3 +760,99 @@ footer a:hover {
     margin-top: 22px;
   }
 }
+
+
+/* ===== DISCOVERY SECTION ===== */
+
+.discovery-section {
+  background: linear-gradient(180deg, #ffffff, #f5faf6);
+}
+
+.section-heading {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+.small-label {
+  display: inline-block;
+  color: #075d35;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.discovery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.discovery-card {
+  background: #ffffff;
+  border: 1px solid #dce9df;
+  border-radius: 18px;
+  padding: 25px 20px;
+  text-align: center;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.discovery-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(7, 93, 53, .12);
+}
+
+.discovery-icon {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background: #edf7ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.discovery-card h3 {
+  color: #075d35;
+  margin: 8px 0 10px;
+  font-size: 20px;
+}
+
+.discovery-card p {
+  color: #5f6d65;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.text-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #075d35;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  color: #d9a52b;
+}
+
+/* Mobile */
+
+@media(max-width:900px) {
+  .discovery-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width:520px) {
+  .discovery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .discovery-card {
+    padding: 28px 22px;
+  }
+}
