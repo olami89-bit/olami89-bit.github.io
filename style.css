@@ -733,3 +733,19 @@ footer a:hover {
         padding: 11px 16px;
     }
 }
+
+/* =========================
+   FREE PDF DOWNLOAD BADGE
+========================= */
+
+.free-download-badge {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 9px 16px;
+    border-radius: 30px;
+    background: #f5f0dc;
+    color: #075d35;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid #d9a52b;
+}
