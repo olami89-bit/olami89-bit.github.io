@@ -749,3 +749,20 @@ footer a:hover {
     font-size: 14px;
     border: 1px solid #d9a52b;
 }
+
+.herbal-guide {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.herbal-guide-image {
+    display: block;
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+}
