@@ -775,3 +775,10 @@ footer a:hover {
     margin: 20px auto;
     border-radius: 12px;
 }
+
+.image-hint {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-top: 8px;
+}
